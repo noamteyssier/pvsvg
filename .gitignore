@@ -161,3 +161,4 @@ cython_debug/
 
 # ignore test script
 main.py
+test.html
