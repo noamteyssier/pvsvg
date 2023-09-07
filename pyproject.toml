@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pvsvg"
+version = "0.1.0"
+description = "an implementation of visjs from networkx with export svg"
+authors = ["noam teyssier <22600644+noamteyssier@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+networkx = "^3.1"
+jinja2 = "^3.1.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.1"
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
