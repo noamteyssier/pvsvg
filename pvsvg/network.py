@@ -38,6 +38,7 @@ class Network:
         self.style_path_vis = os.path.join(module_dir, "styles/vis-network.min.css")
         self.script_path_vis = os.path.join(module_dir, "scripts/vis.js")
         self.script_path_canvas2svg = os.path.join(module_dir, "scripts/canvas2svg.js")
+        self.script_path_utils = os.path.join(module_dir, "scripts/utils.js")
 
     def _set_physics_kwargs(self, physics_kwargs: dict):
         self._options_physics = {
@@ -98,6 +99,9 @@ class Network:
         with open(self.script_path_canvas2svg, "r") as f:
             self._script_content_canvas2svg = f.read()
 
+        with open(self.script_path_utils, "r") as f:
+            self._script_content_utils = f.read()
+
     def _build_node_json(self):
         self._node_attrs = []
         for n in self.graph.nodes(data=True):
@@ -140,6 +144,7 @@ class Network:
             "VIS_CSS": self._style_content_vis,
             "VIS_JS": self._script_content_vis,
             "CANVAS2SVG_JS": self._script_content_canvas2svg,
+            "UTILS_JS": self._script_content_utils,
             "NODES": self._node_json,
             "EDGES": self._edge_json,
             "OPTIONS_PHYSICS": self._json_physics,
