@@ -4,8 +4,8 @@ from typing import Optional, Union
 import networkx as nx
 from jinja2 import Template
 
-class Network:
 
+class Network:
     def __init__(
         self,
         graph: nx.Graph,
@@ -153,4 +153,3 @@ class Network:
         Draws the network into an html canvas.
         """
         self._initialize_html(filename)
-
