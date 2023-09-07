@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pvsvg"
-version = "0.1.1"
+version = "0.1.2"
 description = "an implementation of visjs from networkx with export svg"
 authors = ["noam teyssier <22600644+noamteyssier@users.noreply.github.com>"]
 license = "MIT"
