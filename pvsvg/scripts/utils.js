@@ -1,5 +1,5 @@
 var defaultPhysicsState = true;
-var defaultGravitationalConstant = -2000;
+var defaultGravitationalConstant = -3.301;
 var defaultCentralGravity = 0.3;
 var defaultSpringLength = 95;
 var defaultSpringConstant = 0.04;
